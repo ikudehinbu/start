@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+     @media only screen and (max-width:340px){
+    .system{
+      display:none;
+    }
+    
+    
+    body>article.phone{
+      margin:0;
+      padding:0;
+      font-family: "roboto",  "helvetica";
+      min-width:307px;
+      overflow: auto;
+    }
+    .footer{
+      display: flex;
+      justify-content: space-between;
+    }
+    section.footer{
+      color:hsla(360, 0%, 65%, 0.9);
+      font-weight:normal;
+      padding:0;
+      margin:0;
+      
+      height:105px;
+    }
+    footer> p{
+      margin:0;
+      padding:0;
+      color:white;
+     
+    }
+    footer{
+      background-color:hsla(0, 0%, 0%, 0.72);
+      padding:0.3px 10px 10px 10px;
+    }
+    p.bold{
+      font-weight:bold;
+    }
+    
+    section.main{
+      padding:10px;
+      background-color:rgb(385, 240, 240,.5);
+    }
+    input{
+      width:100%;
+      height:30px;
+    }
+    button.log{
+       width:100%;
+      height:40px;
+      background-color:royalblue;
+      color:white;
+    }
+    .line{
+      display:inline-block;
+      width:45%;
+      
+    }
+    #line{
+      text-align:center;
+    }
+    div.border{
+     display:flex;
+      border:1px solid yellow;
+      background-color:rgba(300, 253, 208, 1);
+      color:royalblue;
+      }
+    
+      div.border>img{
+        text-align: center;
+        background-color:black;
+      }
+    div.border>p{
+      position:relative;
+      bottom:10px;
+    }
+      
+    
+    div.head{
+      background-color:royalblue;
+      font-size:20px;
+      padding:10px 0px 10px 10px;
+      color:white;
+    }
+    button.account{
+      border:0.5px solid blue;
+      display:inline;
+      float:right;
+      background-color:limegreen;
+      color:white;
+      height:28px
+    }
+    div.head>p{
+      display:inline;
+      
+    }
+    div.new{
+      text-align:center
+    }
+    div.new>button{
+      width:60%;
+      height:40px;
+      background-color:limegreen;
+      color:white
+    }
+    div.new>p{
+      color:royalblue;
+    }
+    button{
+      border:none;
+    }
+    
+    }
+    
+    @media only screen and (min-width:340px){
+      article.system{
+      margin:0px;
+      font-family: "roboto",  "helvetica";
+      overflow:auto;
+      min-width:1125px;
+      justify-content:center;
+       
+      
+    }
+      .phone{
+      display:none;
+    }
+    footer{
+      background-color:white;
+      color:blue;
+      word-spacing:6px;
+      text-align:left;
+      font-size:11px;
+      padding:10px 19%;
+  
+    }
+    footer p{
+      
+      padding:0 auto,
+    }
+    hr.footer{
+      margin;0
+    }
+    footer p>span.one{
+      color:black;
+    }
+   
+    main input.name{
+      border-radius:4px;
+      border:2px solid white;
+      height:32px;
+      width:169px;
+     font-size:17px;
+      
+    }
+    main input.password{
+      border-radius:4px;
+      border:2px solid white;
+      height:32px;
+      width:350px;
+      text-align:left;
+      font-size:17px;
+    }
+    section>form>div.info input{
+      margin:5px 0;
+    }
+     
+    select.day{
+      width:50px;
+      text-align:center;
+    }
+    select{
+      height:25px;
+       padding:0 5px;
+    }
+    section>form>div.birthday{
+    word-spacing:-0.9em; 
+    }
+    div.gender>p input{
+      font-size:5px;
+    }
+    div.gender>p span{
+     font-size:19px; 
+     vertical-align:sub; 
+    }
+   button.more{
+     border:none;
+      background-color:grey;
+      border-radius:100px;
+     margin:0 20px;
+    }
+    div.gender1>p{
+      margin:20px 0 5px 0;
+      padding:0px;
+      color:grey;
+    }
+    div.gender> p{
+     margin:0 0 0 5px;
+     padding:0px;
+     
+    }
+    section p.terms{
+      width:280px;
+      font-size:9.9px;
+      color:grey;
+      
+    }
+    section button.sign{
+     width:170px;
+     height:40px;
+     background-color:lightgreen; 
+     margin:5px 0 0 0;
+     border-radius:5px; 
+     color:white;
+     font-weight:bold;
+     font-size:16px;
+      
+    }
+    section p.page{
+      font-size:13px;
+      color:grey;
+      font-weight:500;
+       
+    }
+    footer div span.last{
+      color:grey;
+    }
+    
+    main>div>p{
+      margin:0 0 10px 0;
+      font-size:17px;
+    }
+    main>div>h1{
+     margin:30px 0 10px 0; 
+    }
+    .header{
+      display:flex
+    }
+    
+    header>form{
+      display:flex;
+      font-size:12px;
+      color:white;
+      padding:0 0 0 0px;
+    }
+    
+    header>form>p{
+      padding:0px;
+      
+    }
+    
+    header>form>button{
+      height:21px;
+      margin:26px 5px;
+      background-color:blue;
+      color:white;
+      font-weight:600;
+      border:none;
+      
+    }
+    header input{
+      width:140px;
+    }
+    header{
+      background-color:royalblue;
+      display:flex;
+      color:white;
+     padding:0px 10%;
+      height:67px;
+      
+     
+    }
+    
+    header>form span{
+      color:blue;
+    }
+    header>h1{
+      margin:20px 320px 10px  10px;
+      font-size:40px;
+      width:200px;
+    }
+    div.birthday>p{
+      color:grey;
+      margin-bottom:0px;
+    }
+    main.body{
+      display:flex;
+      
+       background-color:yellow;
+      justify-content:center;
+      
+      padding:0 auto;
+    }
+    
+    main>section.facebook{
+      font-weight:bold;
+      width:600px;
+      
+    }
+    
+      
+      
+    }
+    
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Facebook page</title>
+</head>
+
+ <body>
+   
+   <article class="phone">
+ <div class="head">
+   <p>facebook</p>
+   <button class="account">Create Account</button>
+ </div>
+  
+  <div class="border">
+    <img src=https://st4.depositphotos.com/15827064/21673/v/450/depositphotos_216733642-stock-illustration-smartphone-mobile-icon-flat-design.jpg alt="phone" width="50px" height="auto">
+    <p>Get Facebook for Android and browser faster.</p>
+  </div>
+  
+  <section class="main">
+ <div>
+    <form >
+      <p>Phone number or email address <br><input type="text" name="user_id"></p>
+      <p>Password <br>   <input type="password" name="password"> </p>
+      
+     <button class="log" style="border:none">Log In</button>
+  </form>
+ </div>
+ <div id=line> <hr class="line"> or <hr class="line"></div>
+  <div class="new">
+  <button>Create New Account</button>
+  <p>Forgotten password?</p>
+    </div>
+  </section>
+  
+  <footer>
+    <section class="footer">
+     <div >
+      <p class="bold">English (UK)</p>
+      <p>Português (Brasil)</p>
+      <p>Español </p>
+     </div>
+      <div class="lang">
+        <p>Hausa</p>
+        <p>Français (France)</p>
+        <button>+</button>
+      </div>
+
+    </section>
+    
+      <p>Facebook Inc.</p>
+    </footer>
+  
+  
+</article>
+   
+<article class="system">
+    
+<header>
+  <h1>facebook</h1>
+  <form>
+    <p>Email or phone <br> <input type="text" name="user_id"></p>
+    <p>Password <br> <input type="password" name="password"><br>
+    <span>forgotten password?</span></p>
+      
+    <button>Log In</button>
+     
+  </form>
+</header>  
+  
+ <main class="body"> 
+   
+   <section class="facebook">
+     <p>Facebook helps you connect and share with the people in your life.</p>
+     <img src="https://www.facebook.com/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt="fbimg">
+   </section>
+   
+   <section>
+    <div>
+      <h1>Create an account</h1>
+      <p>it's quick and easy.</p>
+    </div>
+    
+    <section>
+        <form>
+           <div class="info">
+             <input class="name" type="text" name="first name" placeholder="  First name">
+                <input class="name" type="text" name="surname" placeholder="  Surname"> <br>
+                <input class="password" type="text" name="mobile number or email" placeholder="  Mobile number or email"> <br>
+               <input class="password" type="password" name="password" placeholder="  New password"> <br>
+
+          </div>
+
+        <div class="birthday">
+            <p>Birthday</p>
+            <select class="day" name="day" id="day" title="Day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+           </select>
+
+            <select name="month" id="month" title="Month">
+              <option value="January">Jan</option>
+              <option value="Febuary">Feb</option>
+              <option value="March">Mar</option>
+              <option value="April">Apr</option>
+            </select>
+
+            <select name="year" id="year" title="Year">
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+
+            </select>
+          <button class="more" title="Click for more information">?</button>
+
+        </div>
+
+          <div class="gender1">
+             <p>Gender</p>
+            <div class="gender">
+            <p>
+            <input type="radio" name="gender"><span>Female</span>
+            <input type="radio" name="gender"><span>Male</span>
+              <input type="radio" name="gender"><span>Custom</span>
+              <button class="more" title="Click for more information">?</button>
+              </p>
+            </div>
+         </div>   
+        </form>
+    </section>   
+    
+      <section>
+        <p class="terms">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+        <button class="sign">Sign Up</button>
+        <p class="page">Create a Page for a celebrity, band or business.</p>
+      </section>
+     
+     </section>
+   
+    
+  </main>
+  
+   <footer>
+     <p>
+       <span class="one">English (UK)</span>
+Hausa
+Português (Brasil)
+Français (France)
+Español
+???????
+Italiano
+???
+Deutsch
+Bahasa Indonesia
+??????
+<botton>+</botton>
+     </p>
+     <hr class="footer">
+     <div>
+       <p>
+       <span>Sign Up</span> <span>Log In</span> <span>Messenger</span> <span>Facebook Lite</span> <span>Watch</span> <span>People</span> <span>Pages</span> <span>Page categories</span> <span>place</span> <span>Games</span> <span>Locations</span> <span>Marketplace</span> <span>Groups</span> <span>Portal</span> 
+       </p>
+       <p>
+       <span>Instagram</span> <span>Local</span> <span>Fundraisers</span> <span>Services</span> <span>About</span> <span>Createad</span> <span>CreatePage</span> <span>Developers</span> <span>Careers</span> <span>Privacy</span> <span>Cookies</span> <span>AdChoices</span> <span>Terms</span> <span>Help</span>
+       </p>
+<span class="last">Facebook © 2020</span>
+     </div>
+   </footer>
+</article1>
+</body>
+</html>
