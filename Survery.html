@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY</title>
+</head>
+<body>
+    <h1 id="title">WORK EXPERIENECE SURVEY</h1>
+    <p id="description">This form is a survey on your work experience at different companies or organisation</p>
+
+    <form id="survey-form" action="">
+        <div>
+            <label id="name-label" for="name" >Name</label> <br>
+            <input id="name" type="text" placeholder="Full name" required>
+            <label id="email-label" for="email">Email</label> <br>
+            <input id="email" type="email" name="" placeholder="Input email address" required > <br>
+            <label id="number-label" for="Number of companies/organisations you have worked">Number of companies/organisations you have worked</label> <br>
+            <input id="number" type="number" name="" placeholder="organisations worked for" > <br>
+            <label id="number-label" for="age">Age</label> <br>
+            <input id="number" type="number" name="age" min="15" max="60" placeholder="How old are you">
+        </div>
+
+        <div>
+            <select id="dropdown" name="next of kin"  >
+                <option selected disabled value=>select next of kin</option>
+                <option value="Partner">Partner</option>
+                <option value="brother">Brother</option>
+                <option value="Sister">Sistert</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+
+            </select>
+
+            <div>
+                <p>Best palce you have worked</p>
+                <label for="best place worked">Lagos</label>
+                <input type="radio" name="Best place worked" id="Lagos"> <br>
+                <label for="best place worked">Abuja</label>
+                <input type="radio" name="Best place worked" id="Abuja"> <br>
+                <label for="best place worked">Port-Harcourt</label>
+                <input type="radio" name="Best place worked" id="Port-Harcourt"> <br>
+                <label for="best place worked">Oyo</label>
+                <input type="radio" name="Best place worked" id="Oyo"> <br>
+                <label for="best place worked">Calabar</label>
+                <input type="radio" name="Best place worked" id="Calabar"> <br>
+               
+            </div>
+
+            <div>
+                <p>Places you have worked</p>
+                <label for=""> Lagos <input type="checkbox" name="Best place worked" id="Lagos"></label> <br>
+                <label for="">Abuja<input type="checkbox" name="Best place worked" id="Abuja"></label> <br>
+                <label for="">Port-Harcourt<input type="checkbox" name="Best place worked" id="Port-Harcourt"></label> <br>
+                <label for="">Oyo<input type="checkbox" name="Best place worked" id="Oyo"></label> <br>
+                <label for="">Calabar<input type="checkbox" name="Best place worked" id="Calabar"></label> <br> 
+               
+            </div>
+
+            <footer>
+                <p>Tell us more information about your work experiences</p>
+                <textarea name="more information" id="" cols="30" rows="10" placeholder="more information"> </textarea> <br>
+
+                <input type="button" value="submit">
+            </footer>
+            
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>
