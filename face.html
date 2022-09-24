@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       
+       
+       body>article.phone{
+         margin:0;
+         padding:0;
+         font-family: "roboto",  "helvetica";
+         min-width:307px;
+         overflow: auto;
+       }
+       .footer{
+         display: flex;
+         justify-content: space-between;
+       }
+       section.footer{
+         color:hsla(360, 0%, 65%, 0.9);
+         font-weight:normal;
+         padding:0;
+         margin:0;
+         
+         height:105px;
+       }
+       footer> p{
+         margin:0;
+         padding:0;
+         color:white;
+        
+       }
+       footer{
+         background-color:hsla(0, 0%, 0%, 0.72);
+         padding:0.3px 10px 10px 10px;
+       }
+       p.bold{
+         font-weight:bold;
+       }
+       
+       section.main{
+         padding:10px;
+         background-color:rgb(385, 240, 240,.5);
+       }
+       input{
+         width:100%;
+         height:30px;
+       }
+       button.log{
+          width:100%;
+         height:40px;
+         background-color:royalblue;
+         color:white;
+       }
+       .line{
+         display:inline-block;
+         width:45%;
+         
+       }
+       #line{
+         text-align:center;
+       }
+       div.border{
+        display:flex;
+         border:1px solid yellow;
+         background-color:rgba(300, 253, 208, 1);
+         color:royalblue;
+         }
+       
+         div.border>img{
+           text-align: center;
+           background-color:black;
+         }
+       div.border>p{
+         position:relative;
+         bottom:10px;
+       }
+         
+       
+       div.head{
+         background-color:royalblue;
+         font-size:20px;
+         padding:10px 0px 10px 10px;
+         color:white;
+       }
+       button.account{
+         border:0.5px solid blue;
+         display:inline;
+         float:right;
+         background-color:limegreen;
+         color:white;
+         height:28px
+       }
+       div.head>p{
+         display:inline;
+         
+       }
+       div.new{
+         text-align:center
+       }
+       div.new>button{
+         width:60%;
+         height:40px;
+         background-color:limegreen;
+         color:white
+       }
+       div.new>p{
+         color:royalblue;
+       }
+       button{
+         border:none;
+       }
+       
+    </style>
+</head>
+<body>
+    <article class="phone">
+        <div class="head">
+          <p>facebook</p>
+          <button class="account">Create Account</button>
+        </div>
+         
+         <div class="border">
+           <img src=https://st4.depositphotos.com/15827064/21673/v/450/depositphotos_216733642-stock-illustration-smartphone-mobile-icon-flat-design.jpg alt="phone" width="50px" height="auto">
+           <p>Get Facebook for Android and browser faster.</p>
+         </div>
+         
+         <section class="main">
+        <div>
+           <form >
+             <p>Phone number or email address <br><input type="text" name="user_id"></p>
+             <p>Password <br>   <input type="password" name="password"> </p>
+             
+            <button class="log" style="border:none">Log In</button>
+         </form>
+        </div>
+        <div id=line> <hr class="line"> or <hr class="line"></div>
+         <div class="new">
+         <button>Create New Account</button>
+         <p>Forgotten password?</p>
+           </div>
+         </section>
+         
+         <footer>
+           <section class="footer">
+            <div >
+             <p class="bold">English (UK)</p>
+             <p>Português (Brasil)</p>
+             <p>Español </p>
+            </div>
+             <div class="lang">
+               <p>Hausa</p>
+               <p>Français (France)</p>
+               <button>+</button>
+             </div>
+       
+           </section>
+           
+             <p>Facebook Inc.</p>
+           </footer>
+         
+         
+       </article>
+</body>
+</html>
